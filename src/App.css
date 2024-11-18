@@ -1,38 +1,135 @@
-.App {
-  text-align: center;
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Styling untuk body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Container utama */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  min-height: calc(100vh - 80px); /* Mengatur tinggi minimum agar tidak terpotong oleh navbar */
+  overflow: auto; /* Mengizinkan scroll jika konten melebihi tinggi */
+}
+
+/* Heading */
+h1, h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Style untuk navigation */
+nav {
+  background-color: #333;
+  padding: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Daftar drama populer */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  background: #fff;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+ul li a:hover {
+  color: #555;
+}
+
+/* Detail halaman drama */
+.drama-detail {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.drama-detail h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.drama-detail p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Tombol kembali */
+.back-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.back-button:hover {
+  background-color: #555;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  nav {
+    text-align: center;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 5px 0;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.favorite-button {
+  background-color: #ffcc00;
+  color: #333;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.favorite-button:hover {
+  background-color: #ff9900;
 }

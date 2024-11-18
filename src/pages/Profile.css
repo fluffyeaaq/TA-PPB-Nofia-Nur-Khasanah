@@ -1,0 +1,35 @@
+.profile-container {
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.profile-username,
+.profile-nim, /* Tambahkan style untuk NIM */
+.profile-input {
+    margin-top: 10px;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.profile-avatar-input {
+    margin: 10px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.profile-button {
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.profile-save-button {
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 10px;
+}

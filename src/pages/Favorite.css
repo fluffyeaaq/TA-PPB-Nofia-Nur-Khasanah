@@ -1,0 +1,77 @@
+.container {
+    font-family: Arial, sans-serif;
+    margin: 20px auto;
+    padding-bottom: 40px;
+    max-width: 1200px; /* Batas lebar container */
+}
+
+.container h1 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.container ul {
+    list-style-type: none; /* Menghilangkan bullet points */
+    padding: 0;
+    display: grid; /* Gunakan grid untuk tata letak */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsif */
+    gap: 20px; /* Jarak antar kartu */
+}
+
+.container li {
+    display: flex;
+    flex-direction: column; /* Membuat konten vertikal */
+    align-items: center;
+    background-color: #ffffff; /* Warna latar belakang kartu */
+    border: 1px solid #ddd; /* Border kartu */
+    border-radius: 10px; /* Membulatkan sudut kartu */
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Animasi hover */
+}
+
+.container li:hover {
+    transform: translateY(-5px); /* Gerakan hover */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* Bayangan hover */
+}
+
+.container img {
+    width: 150px; /* Ukuran gambar */
+    height: auto;
+    margin-bottom: 10px; /* Jarak antara gambar dan teks */
+    border-radius: 8px; /* Membuat sudut gambar lebih lembut */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bayangan untuk gambar */
+}
+
+.container h2 {
+    font-size: 18px;
+    margin: 10px 0;
+    text-align: center;
+    color: #222;
+}
+
+.container p {
+    font-size: 14px;
+    margin: 10px 0;
+    text-align: center;
+    color: #555;
+    line-height: 1.6;
+}
+
+.container button {
+    padding: 8px 15px;
+    font-size: 14px;
+    color: white;
+    background-color: #ff5757; /* Warna tombol */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.container button:hover {
+    background-color: #ff3b3b; /* Warna hover tombol */
+    transform: scale(1.05); /* Efek tombol membesar */
+}

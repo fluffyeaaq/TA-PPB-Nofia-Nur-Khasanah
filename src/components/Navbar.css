@@ -1,0 +1,44 @@
+/* Styling untuk Navbar */
+.navigation-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 0;
+    color: white;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+    font-family: Arial, sans-serif;
+    z-index: 10; 
+}
+
+.navigation-bar a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.navigation-bar a:hover {
+    color: #ffcc00;
+    transform: scale(1.1); 
+}
+
+
+.navigation-bar a::before {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.navigation-bar a:nth-child(1)::before { content: "🏠"; } 
+.navigation-bar a:nth-child(2)::before { content: "🔥"; } 
+.navigation-bar a:nth-child(3)::before { content: "👤"; } 
+.navigation-bar a:nth-child(4)::before { content: "❤️"; } 
+
